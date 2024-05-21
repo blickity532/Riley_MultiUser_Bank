@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Riley_OOPBank3
+namespace Riley_MultiUser_Bank
 
 {
     public class Bank
@@ -17,29 +17,6 @@ namespace Riley_OOPBank3
             _balance += amount;
         }
 
-        public void Withdraw(decimal amount)
-        {
-            if (amount > 500)
-            {
-                amount = 500;
-            }
-
-            _balance -= amount;
-
-            if (_balance < 0)
-            {
-                _balance = 0;
-            }
-        }
-
-        public decimal Balance
-        {
-            get
-            {
-                return _balance;
-            }
-        }
-    }
 
     class Program
     {
